@@ -51,7 +51,7 @@ Free python Jupyter environment from Google known as Colab is used for the imple
 ## Implementation
 ### 6.1	Data selection:
 The dataset used in this project is publicly available and is downloaded from UPI repository.  
-https://www.kaggle.com/fabdelja/autism-screening-for-toddlers/version/1 
+https://www.kaggle.com/fabdelja/autism-screening-for-toddlers/version/1  
 https://archive.ics.uci.edu/ml/machine-learningdatabases/00419/ 
 https://archive.ics.uci.edu/ml/machine-learningdatabases/00420/  
 https://archive.ics.uci.edu/ml/machine-learningdatabases/00426/  
