@@ -57,18 +57,22 @@ https://archive.ics.uci.edu/ml/machine-learningdatabases/00420/
 https://archive.ics.uci.edu/ml/machine-learningdatabases/00426/  
 
 Four different datasets are used in this project, which is combined together before applying classification techniques. Table given below shows the detailed summary of the dataset.  
-  
+![table1](https://user-images.githubusercontent.com/78141360/142722598-78406cb8-0a09-417c-bd51-966b69c9cf19.JPG)
   Nineteen attributes are common for all the datasets but the attribute name is different in toddlers’ dataset. Before combining the datasets, the attributes names are made same in all the datasets. In toddlers’ dataset, the age is given in months whereas it is in years for all the other datasets. So, age in years is converted to age in months. The list of attributes in the combined dataset is shown in the table below.  
-
+![table2](https://user-images.githubusercontent.com/78141360/142722595-219576b8-0be1-4ff9-abe6-327eef913a55.JPG)
 As private data is not involved in the datasets used, there is no ethical issue with these data.
 ### 6.2	Exploratory data analysis:
 
 The method of doing a primary investigation on the data is known as exploratory data analysis. This is done to find the pattern underlying in the data, to test the given hypothesis, to check the assumptions made and to spot anomalies. Before applying the machine learning models, the distribution of the data is checked so that their assumptions are satisfied.
 ### 6.3	Data sampling:
 
-Imbalance problem occur where one of the two classes having more sample than other classes. Mainly in classification problems, class imbalance is considered to be a massive problem. It can affect the models and can result in biased output. Fig. 1 shows the bar plot that shows the count of both the classes in each dataset.
+Imbalance problem occur where one of the two classes having more sample than other classes. Mainly in classification problems, class imbalance is considered to be a massive problem. It can affect the models and can result in biased output. Fig. 1 shows the bar plot that shows the count of both the classes in each dataset.  
+Fig. 1: Count of classes in individual datasets.
+![fig1](https://user-images.githubusercontent.com/78141360/142722592-366f0305-dfd1-4112-abe4-0876846f6a57.JPG)
 To handle the problem of class imbalance, upsampling and downsampling are the two methods used. In simple words downsampling is reducing the majority data as to the level of minority class and upsampling is making new data for the marginalized class. The sampling technique applied in this project is Random downsampling. Here, the majority class is equalized to the size of minority class and thus the class imbalance problem is resolved. No additional libraries or pre-defined functions were used to perform random dowmsampling.
-An analysis was also done combining all the four datasets. After combining, the problem of class imbalance was solved and there wasn’t any need to reduce the instances. Fig. 2 shows the count of both classes after combining into a single dataset.
+An analysis was also done combining all the four datasets. After combining, the problem of class imbalance was solved and there wasn’t any need to reduce the instances. Fig. 2 shows the count of both classes after combining into a single dataset.  
+Fig. 2: Count of classes in combined dataset
+![fig2](https://user-images.githubusercontent.com/78141360/142722591-a092702d-59a3-48bf-97cc-b29211175002.JPG)
 ### 6.4	Data pre-processing:
 
 In machine learning, pre-processing is a major step involved. Absence of pre- processing can build on noise and can inturn influence the model being built. Almost all realistic data consist of unnecessary features, missing value fields, uncertain data, etc. Following are the preprocessing steps used in this project.
@@ -140,9 +144,8 @@ In our project, Random Forest, kNN and SVM are tuned using this technique. As Na
 #### 6.10	Feature importance:
 
 While working with supervised learning models, an important task is to determine the features that shows the best predicting powers. It is always useful to study the relationship between target feature and the most contributing features such that it can help us understand the underlying phenomenon much better. In this project, to predict whether an individual has ASD, we identified a small number of independent features that helps in strong prediction. It is expected that at the cost of performance, training time and prediction time will be lowered with only small number of contributing features to train with. Table. 3 shows the important feature from each dataset and that from the combined dataset.
-Table. 3: Feature importance
-
-
+Table. 3: Feature importance.  
+![table3](https://user-images.githubusercontent.com/78141360/142722590-4c3d3e1c-85c0-4196-866b-59a2f8707416.JPG)
 ‘result’, ‘A9_Score’, ‘A5_Score’ and ‘A5_Score’ are the important features. Also, we see that the top most important feature ‘result’ (in term of their weightage factor) contribute heavily compared to the other features.
 
 ### 6.11	K-Fold cross validation:
@@ -188,23 +191,23 @@ Inter-rater reliability is measured using Cohen’s Kappa coefficient statistic.
 ## Result
 
 Table. 4: Assessment of toddler’s data.  
-
+![table4](https://user-images.githubusercontent.com/78141360/142722589-cbc11118-75d9-45db-bf1f-dc244ce34ad6.JPG)
 Table. 4 shows the assessment details of toddler’s data. Random forest with and without hyperparameter tuning gave the highest cross validation of 100 percent. But the time elapsed while running this model is 1.211seconds, which is comparatively high. Whereas Support Vector Classifier with hyperparameter tuning has accuracy of 99.64 percent and time elapsed is 0.01 seconds.
 
 Table. 5: Assessment of children’s data.  
-
+![table5](https://user-images.githubusercontent.com/78141360/142722588-15e8fa1f-3a15-49a2-9f67-e34768c32f7e.JPG)
 Table. 5 shows the assessment details of children’s data. Random forest with and without hyperparameter tuning gave the highest cross validation of 100 percent. But the time elapsed while running this model is 1.157 seconds, which is comparatively high. Whereas Support Vector Classifier with hyperparameter tuning has accuracy of 97.029 percent and time elapsed is 0.008 seconds.
 
 Table. 6: Assessment of adolescents’ data.  
-
+![table6](https://user-images.githubusercontent.com/78141360/142722587-fa1942e4-db4b-47a8-9156-ade2c123f5b1.JPG)
 Table. 6 shows the assessment details of adolescents’ data. Random forest with and without hyperparameter tuning gave the highest cross validation of 100 percent. But the time elapsed while running this model is 1.059 seconds. Whereas Support Vector Classifier with hyperparameter tuning has accuracy of 95.23 percent and time elapsed is 0.003 seconds.
 
 Table. 7: Assessment of adults’ data.  
-
+![table7](https://user-images.githubusercontent.com/78141360/142722585-7497a464-a591-4bd0-8e09-2295c226f5ea.JPG)
 Table. 7 shows the assessment details of adults’ data. Random forest with and without hyperparameter tuning gave the highest cross validation of 100 percent. But the time elapsed while running this model is 1.162 seconds, which is comparatively high. Whereas Support Vector Classifier with hyperparameter tuning has accuracy of 98.355 percent and time elapsed is 0.006 seconds.
 
 Table. 8: Assessment of combined data.  
-
+![table8](https://user-images.githubusercontent.com/78141360/142722583-36449cb1-70a9-49fa-90c8-4d922b907c55.JPG)
 Table. 8 shows the assessment details of combined data. Random forest with hyperparameter tuning gave the highest cross validation score of 99.88 percent and F1- Score of 1 compared to other models. But the time elapsed while running this model is 1.711 seconds, which is comparatively high. Whereas Support Vector Classifier has an accuracy of 97.447 percent and the time elapsed is 0.06 8 seconds.
 Considering the models built on individual datasets and the one build on combined dataset, SVM is considered the best model in this project.
 
