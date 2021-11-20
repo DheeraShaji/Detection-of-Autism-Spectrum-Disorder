@@ -51,6 +51,11 @@ Free python Jupyter environment from Google known as Colab is used for the imple
 ## Implementation
 ### 6.1	Data selection:
 The dataset used in this project is publicly available and is downloaded from UPI repository.  
+https://www.kaggle.com/fabdelja/autism-screening-for-toddlers/version/1 
+https://archive.ics.uci.edu/ml/machine-learningdatabases/00419/ 
+https://archive.ics.uci.edu/ml/machine-learningdatabases/00420/  
+https://archive.ics.uci.edu/ml/machine-learningdatabases/00426/  
+
 Four different datasets are used in this project, which is combined together before applying classification techniques. Table given below shows the detailed summary of the dataset.  
   
   Nineteen attributes are common for all the datasets but the attribute name is different in toddlers’ dataset. Before combining the datasets, the attributes names are made same in all the datasets. In toddlers’ dataset, the age is given in months whereas it is in years for all the other datasets. So, age in years is converted to age in months. The list of attributes in the combined dataset is shown in the table below.  
